@@ -1,0 +1,68 @@
+/* home page */
+
+body{
+    font-family: sans-serif;
+}
+
+#home-box{
+    display:flex;
+    flex-direction: column;
+}
+
+#hero-box{
+    display: box;
+    display: flex;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+#hero{
+    width:100%;
+    filter: brightness(40%);
+
+}
+
+#slogan{
+    position: absolute;
+    color: white;
+    font-size: 40px;
+    margin: 50px;
+    text-align: center;
+}
+
+#button-box{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.genre{
+    display: flex;
+    width: 40%;
+    display: box;
+    box-align: center;
+    align-items: center;
+    box-pack: center;
+    justify-content: center;
+    transition: transform .2s ease;
+}
+
+.genre-label{
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    margin: 50px;
+    text-align: center;
+}
+
+.button{
+    width: 100%;
+    border-radius: 20px;
+    filter: drop-shadow(4px 4px 4px #a7a7a7) brightness(40%);
+}
+
+.genre:hover {
+    transform: scale(1.03); 
+  }
