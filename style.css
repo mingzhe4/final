@@ -2,6 +2,26 @@
 
 body{
     font-family: sans-serif;
+    background: linear-gradient(135deg, rgb(111, 240, 250) 0%, rgb(248, 230, 93) 60%, rgba(245,113,255,1) 100%);
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(27, 13, 42);
+}
+
+#logo{
+    margin: 30px;
+    color: white;
+}
+
+#menu{
+    display: flex;
+    gap: 30px;
+    margin: 30px;
+    color: white;
 }
 
 #home-box{
@@ -10,11 +30,8 @@ body{
 }
 
 #hero-box{
-    display: box;
     display: flex;
-    box-align: center;
     align-items: center;
-    box-pack: center;
     justify-content: center;
     margin-bottom: 100px;
 }
@@ -22,7 +39,7 @@ body{
 #hero{
     width:100%;
     filter: brightness(40%);
-
+    z-index: -1;
 }
 
 #slogan{
@@ -36,6 +53,7 @@ body{
 #button-box{
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 100px;
 }
 
 .genre{
