@@ -1,15 +1,27 @@
 /* home page */
 
-body{
+.home-body{
     font-family: sans-serif;
     background: linear-gradient(135deg, rgb(111, 240, 250) 0%, rgb(248, 230, 93) 60%, rgba(245,113,255,1) 100%);
+}
+
+.detail-body{
+    font-family: sans-serif;
+    background-color: rgba(245, 245, 220, 0.628);
 }
 
 #nav{
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color: rgb(27, 13, 42);
+    background-color: rgba(207, 71, 248, 0.315);
+}
+
+.detail-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(111, 240, 250) 0%, rgb(248, 230, 93) 60%, rgba(245,113,255,1) 100%);
 }
 
 #logo{
@@ -22,6 +34,11 @@ body{
     gap: 30px;
     margin: 30px;
     color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
 }
 
 #home-box{
@@ -83,3 +100,73 @@ body{
 .genre:hover {
     transform: scale(1.03); 
   }
+
+
+/* HIPHOP */
+.row-box{
+    display: flex;
+}
+
+.card-box{
+    margin: 30px;
+    flex: 1 1;
+    transition: transform .2s ease;
+    padding: 20px;
+}
+
+.card-box:hover{
+    transform: scale(1.03);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.image{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.beginner{
+    background-color: rgb(247, 185, 249);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.intermediate{
+    background-color: rgb(250, 243, 139);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.advanced{
+    background-color: rgb(152, 250, 139);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+}
+
+.hour{
+    background-color: rgb(139, 250, 243);
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.name{
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.description{
+    margin-top: 20px;
+}
+
