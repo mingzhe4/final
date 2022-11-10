@@ -39,10 +39,9 @@ body{
 #hero{
     width:100%;
     filter: brightness(40%);
-    z-index: -1;
 }
 
-#slogan{
+.slogan{
     position: absolute;
     color: white;
     font-size: 40px;
