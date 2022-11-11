@@ -103,15 +103,25 @@ a{
 
 
 /* HIPHOP */
+#body-box{
+    display: flex;
+    flex-direction: column;
+}
+
 .row-box{
     display: flex;
 }
 
+.row-flex{
+    display: flex;
+    flex: 1 1;
+}
+
 .card-box{
     margin: 30px;
-    flex: 1 1;
     transition: transform .2s ease;
     padding: 20px;
+    flex: 1 1;
 }
 
 .card-box:hover{
@@ -126,39 +136,43 @@ a{
 
 .beginner{
     background-color: rgb(247, 185, 249);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 10px;
+    font-size: 10px;
 }
 
 .intermediate{
     background-color: rgb(250, 243, 139);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 10px;
+    font-size: 10px;
 }
 
 .advanced{
     background-color: rgb(152, 250, 139);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 10px;
+    font-size: 10px;
 }
 
 .hour{
     background-color: rgb(139, 250, 243);
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
     padding-top: 2px;
     padding-bottom: 2px;
     border-radius: 10px;
-    margin-left: 5px;
+    margin-left: 3px;
+    font-size: 10px;
 }
 
 .name{
@@ -168,5 +182,57 @@ a{
 
 .description{
     margin-top: 20px;
+    color: rgb(98, 98, 98);
 }
 
+@media only screen and (max-width:1030px){
+    #hero-box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+    
+    .slogan{
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        margin: 50px;
+        text-align: center;
+    }
+    
+    #button-box{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        row-gap: 30px;
+        align-items: center;
+    }
+
+    .genre{
+        display: flex;
+        width: 50%;
+        transition: transform .2s ease;
+    }
+
+    .row-box{
+        display: flex;
+        flex: 1 1;
+        flex-direction: column;
+    }
+
+    .row-flex{
+        display: flex;
+        flex: 1 1;
+    }
+    
+    .card-box{
+        display: flex;
+        flex-direction: column;
+        margin: 30px;
+        transition: transform .2s ease;
+        padding: 20px;
+        flex: 1 1;
+    }
+
+}
