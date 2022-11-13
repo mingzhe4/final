@@ -194,6 +194,55 @@ a{
     width: 12%;
 }
 
+#foundations:hover{
+    content: url("assets/gif/foundations.gif");
+}
+
+#kasa:hover{
+    content: url("assets/gif/kasa.gif");
+}
+
+#modernx:hover{
+    content: url("assets/gif/modernx.gif");
+}
+
+#kcn:hover{
+    content: url("assets/gif/kcn.gif");
+}
+
+#vsu:hover{
+    content: url("assets/gif/vsu.gif");
+}
+
+#nsu:hover{
+    content: url("assets/gif/nsu.gif");
+}
+
+#samahang:hover{
+    content: url("assets/gif/samahang.gif");
+}
+
+#aca:hover{
+    content: url("assets/gif/aca.gif");
+}
+
+#kbm:hover{
+    content: url("assets/gif/kbm.gif");
+}
+
+#seoula:hover{
+    content: url("assets/gif/seoula.gif");
+}
+
+#koreos:hover{
+    content: url("assets/gif/koreos.gif");
+}
+
+#playground:hover{
+    content: url("assets/gif/playground.gif");
+}
+
+
 @media only screen and (max-width:1030px){
     #hero-box{
         display: flex;
