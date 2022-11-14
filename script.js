@@ -1,5 +1,5 @@
 $('.slogan').textillate({
-    in: { effect: 'splat' },
-    out: { effect: 'foldUnfold', sync: true },
+    in: { effect: 'flash' },
+    out: { effect: 'swing', sync: true },
     loop: true
 });
