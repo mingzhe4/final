@@ -1,15 +1,12 @@
-/* home page */
+/* --------------------------- home page --------------------------------- */
 
+/*entire home page*/
 .home-body{
     font-family: sans-serif;
     background: linear-gradient(135deg, rgb(111, 240, 250) 0%, rgb(248, 230, 93) 60%, rgba(245,113,255,1) 100%);
 }
 
-.detail-body{
-    font-family: sans-serif;
-    background-color: rgba(245, 245, 220, 0.628);
-}
-
+/*navigation bar for home page*/
 #nav{
     display: flex;
     justify-content: space-between;
@@ -17,35 +14,31 @@
     background-color: rgba(207, 71, 248, 0.315);
 }
 
-.detail-nav{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background: linear-gradient(135deg, rgb(111, 240, 250) 0%, rgb(248, 230, 93) 60%, rgba(245,113,255,1) 100%);
-}
-
+/*logo on the top left corner*/
 #logo{
     margin: 30px;
-    color: white;
 }
 
+/*items in the navigation bar*/
 #menu{
     display: flex;
     gap: 30px;
     margin: 30px;
-    color: white;
 }
 
+/*linked items*/
 a{
     text-decoration: none;
     color: rgb(0, 0, 0);
 }
 
+/*entire body page except for nav bar*/
 #home-box{
     display:flex;
     flex-direction: column;
 }
 
+/*hero image and slogan container*/
 #hero-box{
     display: flex;
     align-items: center;
@@ -53,11 +46,13 @@ a{
     margin-bottom: 100px;
 }
 
+/*hero image*/
 #hero{
     width:100%;
     filter: brightness(40%);
 }
 
+/*slogan sentence*/
 .slogan{
     position: absolute;
     color: white;
@@ -66,12 +61,14 @@ a{
     text-align: center;
 }
 
+/*button box container*/
 #button-box{
     display: flex;
     justify-content: space-evenly;
     margin-bottom: 100px;
 }
 
+/*two button box hiphop & kpop*/
 .genre{
     display: flex;
     width: 40%;
@@ -83,6 +80,7 @@ a{
     transition: transform .2s ease;
 }
 
+/*text on button*/
 .genre-label{
     position: absolute;
     color: white;
@@ -91,32 +89,53 @@ a{
     text-align: center;
 }
 
+/*button styling*/
 .button{
     width: 100%;
     border-radius: 20px;
     filter: drop-shadow(4px 4px 4px #a7a7a7) brightness(40%);
 }
 
+/*button display change on hover*/
 .genre:hover {
     transform: scale(1.03); 
   }
 
 
-/* HIPHOP */
+/* ---------------------------------- HIPHOP & KPOP------------------------------------- */
+
+/*entire hiphop & kpop page*/
+.detail-body{
+    font-family: sans-serif;
+    background-color: rgba(245, 245, 220, 0.628);
+}
+
+/*navigation bar for hiphop & kpop page*/
+.detail-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(111, 240, 250) 0%, rgb(248, 230, 93) 60%, rgba(245,113,255,1) 100%);
+}
+
+/*entire body page except for nav bar*/
 #body-box{
     display: flex;
     flex-direction: column;
 }
 
+/*each row*/
 .row-box{
     display: flex;
 }
 
+/*half of each row*/
 .row-flex{
     display: flex;
     flex: 1 1;
 }
 
+/*each team*/
 .card-box{
     margin: 30px;
     transition: transform .2s ease;
@@ -124,16 +143,19 @@ a{
     flex: 1 1;
 }
 
+/*hover effect on each team*/
 .card-box:hover{
     transform: scale(1.03);
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 
+/*image for each dance team*/
 .image{
     width: 100%;
     margin-bottom: 10px;
 }
 
+/*beginner level label*/
 .beginner{
     background-color: rgb(247, 185, 249);
     padding-left: 6px;
@@ -144,6 +166,7 @@ a{
     font-size: 11px;
 }
 
+/*intermediate level label*/
 .intermediate{
     background-color: rgb(250, 243, 139);
     padding-left: 6px;
@@ -154,6 +177,7 @@ a{
     font-size: 11px;
 }
 
+/*advanced level label*/
 .advanced{
     background-color: rgb(152, 250, 139);
     padding-left: 6px;
@@ -164,6 +188,7 @@ a{
     font-size: 11px;
 }
 
+/*commitment label*/
 .hour{
     background-color: rgb(139, 250, 243);
     padding-left: 6px;
@@ -175,25 +200,30 @@ a{
     font-size: 11px;
 }
 
+/*name of each dance team*/
 .name{
     font-size: 20px;
     margin-top: 10px;
 }
 
+/*description of each dance team*/
 .description{
     margin-top: 20px;
     color: rgb(98, 98, 98);
 }
 
+/*label styling*/
 .label{
     display: flex;
 }
 
+/*instagram logo*/
 .ig-logo{
     margin-top: 10px;
     width: 12%;
 }
 
+/*hover over eahc team effects - logo changes to video*/
 #foundations:hover{
     content: url("../assets/gif/foundations.gif");
 }
@@ -242,8 +272,9 @@ a{
     content: url("../assets/gif/playground.gif");
 }
 
-
+/*responsive website*/
 @media only screen and (max-width:1030px){
+    /*less margin bottom*/
     #hero-box{
         display: flex;
         align-items: center;
@@ -251,6 +282,7 @@ a{
         margin-bottom: 50px;
     }
     
+    /*font size smaller*/
     .slogan{
         position: absolute;
         color: white;
@@ -259,6 +291,7 @@ a{
         text-align: center;
     }
     
+    /*vertically stacked instead of horizontally stacked*/
     #button-box{
         display: flex;
         flex-direction: column;
@@ -266,24 +299,21 @@ a{
         row-gap: 30px;
         align-items: center;
     }
-
+    /*button wider*/
     .genre{
         display: flex;
         width: 50%;
         transition: transform .2s ease;
     }
 
+    /*two in a row instead of four*/
     .row-box{
         display: flex;
         flex: 1 1;
         flex-direction: column;
     }
-
-    .row-flex{
-        display: flex;
-        flex: 1 1;
-    }
     
+    /*vertically stacked*/
     .card-box{
         display: flex;
         flex-direction: column;
